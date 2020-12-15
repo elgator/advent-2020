@@ -81,7 +81,7 @@ end
 # ╔═╡ 64f84eb0-3de2-11eb-27a5-291a7d18522f
 begin
 	task_prog1 = parse_line.(readlines("./data/input14.txt"))
-	part1 = sum( values(run_prog(task_prog1)))
+	part2 = sum(values(run_prog(task_prog1)))
 end
 
 # ╔═╡ 9f6fd5c0-3ddf-11eb-3025-57a2a7bd5c72
@@ -102,7 +102,7 @@ end
 # ╔═╡ c8178cc0-3ddf-11eb-0a5f-1971fdf45a05
 begin
 	test_prog = parse_line.(split(test_str2, '\n'))
-	@assert sum( values(run_prog(test_prog))) == 208
+	@assert sum(values(run_prog(test_prog))) == 208
 end
 
 # ╔═╡ Cell order:
